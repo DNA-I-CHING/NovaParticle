@@ -1,0 +1,1335 @@
+
+[effectdef]
+{
+	id = effect_bullvflesh;
+	pdefs = bloodmist, blooddrops, blooddrops2, blooddrops180, blooddrops1802, new1, new2;
+
+}
+
+[effectdef]
+{
+	id = Effect_MeleeBlood;
+	pdefs = bloodmist, blooddrops180, blooddrops1802;
+
+}
+
+[effectdef]
+{
+	id = Effect_GatorBlood;
+	pdefs = bloodmist, blooddrops180, bloodwaterhold, bloodgator, blooddrops2;
+
+}
+
+
+[effectdef]
+{
+	id = Effect_AmHitBody;
+	pdefs = BloodAltG, AmHitBody_Mist3G, AmHitBody_Mist4G, AmHitBody_Mist2G, new1, new2;
+
+}
+
+[effectdef]
+{
+	id = Effect_SGvBody;
+	pdefs = BloodAltSG, SGvBody_Mist3, SGvBody_Mist2, SGvBody_Mist4, S1, S2, S3;
+
+}
+
+[effectdef]
+{
+	id = Effect_PistolBody;
+	pdefs = BloodAlt, new1, new2;
+
+}
+
+[effectdef]
+{
+	id = Effect_FX50CalBody;
+	pdefs = new1, new2, FX50Cal_Blood, FX50Cal_Blood2, FX50Cal_Bloodmist2, Hit_Sphere, 50Cal_Flashbody, 50Cal_HitUp;
+
+}
+
+
+[particledef]
+{
+id	= new1;
+flags	=  EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.200;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 5.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.200;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 0.500;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 0, 201, 0;
+	color2	= 0, 172, 0;
+	color3	= 0, 181, 0;
+	color4	= 0, 182, 0;
+	bump_scale	= 0.000;
+	scale	= 2.500;
+	scale_adj	= 0.000;
+	scale_func	= table6 reverse;
+	alpha_func	= table1;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 360.000, 360.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 30.000;
+	speed	= 0.500;
+	speed_adj	= 0.200;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 100.000;
+	spread	= 180.000;
+	spread_skip	= 150.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	thinpuf.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 0, 201, 0;
+	g1_color2	= 0, 172, 0;
+	g1_color3	= 0, 181, 0;
+	g1_color4	= 0, 182, 0;
+	g1_scale	= 1.500;
+	g1_scale_adj	= 0.000;
+	g1_scale_func	= table6 reverse;
+	g1_alpha_func	= table1;
+	graphic2 =	thinpuf2.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 0, 201, 0;
+	g2_color2	= 0, 172, 0;
+	g2_color3	= 0, 181, 0;
+	g2_color4	= 0, 182, 0;
+	g2_scale	= 1.500;
+	g2_scale_adj	= 0.000;
+	g2_scale_func	= table6 reverse;
+	g2_alpha_func	= table1;
+	graphic3 =	CDirtpuf.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 0, 201, 0;
+	g3_color2	= 0, 172, 0;
+	g3_color3	= 0, 181, 0;
+	g3_color4	= 0, 182, 0;
+	g3_scale	= 1.500;
+	g3_scale_adj	= 0.000;
+	g3_scale_func	= table6 reverse;
+	g3_alpha_func	= table1;
+	graphic4 =	dirtpuf.tga, blend;
+	g4_flip_frames	= 1;
+	g4_flip_rate	= 8;
+	g4_color1	= 0, 201, 0;
+	g4_color2	= 0, 172, 0;
+	g4_color3	= 0, 181, 0;
+	g4_color4	= 0, 182, 0;
+	g4_scale	= 1.500;
+	g4_scale_adj	= 0.000;
+	g4_scale_func	= table6 reverse;
+	g4_alpha_func	= table1;
+
+}
+
+
+[particledef]
+{
+id	= new2;
+flags	=  EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.200;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 20.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.200;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 0.50;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 0, 125, 0;
+	color2	= 0, 167, 0;
+	color3	= 0, 121, 0;
+	color4	= 0, 176, 0;
+	bump_scale	= 0.000;
+	scale	= 1.250;
+	scale_adj	= 0.750;
+	scale_func	= table4 reverse;
+	alpha_func	= table1;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 360.000, 360.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 1.500;
+	speed_adj	= 0.500;
+	elastic	= 0.000;
+	gravity	= -5.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 100.000;
+	spread	= 90.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	thinpuf.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 0, 125, 0;
+	g1_color2	= 0, 167, 0;
+	g1_color3	= 0, 121, 0;
+	g1_color4	= 0, 176, 0;
+	g1_scale	= 1.250;
+	g1_scale_adj	= 0.750;
+	g1_scale_func	= table4 reverse;
+	g1_alpha_func	= table1;
+	graphic2 =	thinpuf.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 0, 125, 0;
+	g2_color2	= 0, 167, 0;
+	g2_color3	= 0, 121, 0;
+	g2_color4	= 0, 176, 0;
+	g2_scale	= 1.250;
+	g2_scale_adj	= 0.750;
+	g2_scale_func	= table4 reverse;
+	g2_alpha_func	= table1;
+	graphic3 =	dirtpuf2.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 0, 125, 0;
+	g3_color2	= 0, 167, 0;
+	g3_color3	= 0, 121, 0;
+	g3_color4	= 0, 176, 0;
+	g3_scale	= 1.250;
+	g3_scale_adj	= 0.750;
+	g3_scale_func	= table4 reverse;
+	g3_alpha_func	= table1;
+
+}
+
+
+[particledef]
+{
+id	= FX50Cal_Bloodmist2;
+flags	=  EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 40.000;
+	emit_rate_adj	= 20.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 0.5;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 145, 0, 0;
+	color2	= 147, 0, 0;
+	color3	= 136, 0, 0;
+	color4	= 132, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 3;
+	scale_adj	= 0.000;
+	scale_func	= table2 reverse;
+	alpha_func	= table2;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 0.000;
+	speed_adj	= 0.000;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 0.000;
+	spread	= 0.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	Splash.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 145, 0, 0;
+	g1_color2	= 147, 0, 0;
+	g1_color3	= 136, 0, 0;
+	g1_color4	= 132, 0, 0;
+	g1_scale	= 2;
+	g1_scale_adj	= 0.000;
+	g1_scale_func	= table2 reverse;
+	g1_alpha_func	= table2;
+
+}
+
+
+[particledef]
+{
+id	= S1;
+flags	=  EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 10.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 121, 0, 0;
+	color2	= 147, 0, 0;
+	color3	= 136, 0, 0;
+	color4	= 132, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 3;
+	scale_adj	= 0.000;
+	scale_func	= table2 reverse;
+	alpha_func	= table1;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 5.000;
+	speed_adj	= 5.000;
+	elastic	= 0.000;
+	gravity	= 100.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 200.000;
+	spread	= 0.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	CMSplsh2.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 121, 0, 0;
+	g1_color2	= 147, 0, 0;
+	g1_color3	= 136, 0, 0;
+	g1_color4	= 132, 0, 0;
+	g1_scale	= 1.5;
+	g1_scale_adj	= 0.000;
+	g1_scale_func	= table2 reverse;
+	g1_alpha_func	= table1;
+	graphic2 =	CMSplsh2.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 121, 0, 0;
+	g2_color2	= 147, 0, 0;
+	g2_color3	= 136, 0, 0;
+	g2_color4	= 132, 0, 0;
+	g2_scale	= 1.5;
+	g2_scale_adj	= 0.000;
+	g2_scale_func	= table2 reverse;
+	g2_alpha_func	= table1;
+	graphic3 =	CMSplsh2.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 121, 0, 0;
+	g3_color2	= 147, 0, 0;
+	g3_color3	= 136, 0, 0;
+	g3_color4	= 132, 0, 0;
+	g3_scale	= 1.5;
+	g3_scale_adj	= 0.000;
+	g3_scale_func	= table2 reverse;
+	g3_alpha_func	= table1;
+
+}
+
+[particledef]
+{
+id	= S2;
+flags	=  EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 20.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 132, 0, 0;
+	color2	= 147, 0, 0;
+	color3	= 119, 0, 0;
+	color4	= 132, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 4;
+	scale_adj	= 0.000;
+	scale_func	= table2 reverse;
+	alpha_func	= table1;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 5.000;
+	speed_adj	= 3.000;
+	elastic	= 0.000;
+	gravity	= 100.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 200.000;
+	spread	= 0.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	CMSplsh2.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 132, 0, 0;
+	g1_color2	= 147, 0, 0;
+	g1_color3	= 119, 0, 0;
+	g1_color4	= 132, 0, 0;
+	g1_scale	= 1.5;
+	g1_scale_adj	= 0.000;
+	g1_scale_func	= table2 reverse;
+	g1_alpha_func	= table1;
+	graphic2 =	Water3.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 132, 0, 0;
+	g2_color2	= 147, 0, 0;
+	g2_color3	= 119, 0, 0;
+	g2_color4	= 132, 0, 0;
+	g2_scale	= 1.5;
+	g2_scale_adj	= 0.000;
+	g2_scale_func	= table2 reverse;
+	g2_alpha_func	= table1;
+	graphic3 =	Water4.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 132, 0, 0;
+	g3_color2	= 147, 0, 0;
+	g3_color3	= 119, 0, 0;
+	g3_color4	= 132, 0, 0;
+	g3_scale	= 1.5;
+	g3_scale_adj	= 0.000;
+	g3_scale_func	= table2 reverse;
+	g3_alpha_func	= table1;
+	graphic4 =	CMSplsh2.tga, blend;
+	g4_flip_frames	= 1;
+	g4_flip_rate	= 8;
+	g4_color1	= 132, 0, 0;
+	g4_color2	= 147, 0, 0;
+	g4_color3	= 119, 0, 0;
+	g4_color4	= 132, 0, 0;
+	g4_scale	= 1.5;
+	g4_scale_adj	= 0.000;
+	g4_scale_func	= table2 reverse;
+	g4_alpha_func	= table1;
+
+}
+
+[particledef]
+{
+id	= S3;
+flags	=  EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 10.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 132, 0, 0;
+	color2	= 147, 0, 0;
+	color3	= 119, 0, 0;
+	color4	= 132, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 4;
+	scale_adj	= 0.000;
+	scale_func	= table2 reverse;
+	alpha_func	= table1;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 1.000;
+	speed_adj	= 0.000;
+	elastic	= 0.000;
+	gravity	= 100.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 200.000;
+	spread	= 180.000;
+	spread_skip	= 179.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	CMSplsh2.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 132, 0, 0;
+	g1_color2	= 147, 0, 0;
+	g1_color3	= 119, 0, 0;
+	g1_color4	= 132, 0, 0;
+	g1_scale	= 1.5;
+	g1_scale_adj	= 0.000;
+	g1_scale_func	= table2 reverse;
+	g1_alpha_func	= table1;
+	graphic2 =	Water3.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 132, 0, 0;
+	g2_color2	= 147, 0, 0;
+	g2_color3	= 119, 0, 0;
+	g2_color4	= 132, 0, 0;
+	g2_scale	= 1.5;
+	g2_scale_adj	= 0.000;
+	g2_scale_func	= table2 reverse;
+	g2_alpha_func	= table1;
+	graphic3 =	Water4.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 132, 0, 0;
+	g3_color2	= 147, 0, 0;
+	g3_color3	= 119, 0, 0;
+	g3_color4	= 132, 0, 0;
+	g3_scale	= 1.5;
+	g3_scale_adj	= 0.000;
+	g3_scale_func	= table2 reverse;
+	g3_alpha_func	= table1;
+	graphic4 =	CMSplsh2.tga, blend;
+	g4_flip_frames	= 1;
+	g4_flip_rate	= 8;
+	g4_color1	= 132, 0, 0;
+	g4_color2	= 147, 0, 0;
+	g4_color3	= 119, 0, 0;
+	g4_color4	= 132, 0, 0;
+	g4_scale	= 1.5;
+	g4_scale_adj	= 0.000;
+	g4_scale_func	= table2 reverse;
+	g4_alpha_func	= table1;
+
+}
+
+
+
+[particledef]
+{
+id	= bloodmist;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 20.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 0.350;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 139, 0, 0;
+	color2	= 139, 0, 0;
+	color3	= 139, 0, 0;
+	color4	= 139, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 1.000;
+	scale_adj	= 0.500;
+	scale_func	= table6 reverse;
+	alpha_func	= table8 reverse;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 360.000, 360.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 0.000;
+	speed_adj	= 0.000;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 0.000;
+	spread	= 0.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	CMSplsh2.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 139, 0, 0;
+	g1_color2	= 139, 0, 0;
+	g1_color3	= 139, 0, 0;
+	g1_color4	= 139, 0, 0;
+	g1_scale	= 1.000;
+	g1_scale_adj	= 0.500;
+	g1_scale_func	= table6 reverse;
+	g1_alpha_func	= table8 reverse;
+	graphic2 =	Water3.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 139, 0, 0;
+	g2_color2	= 139, 0, 0;
+	g2_color3	= 139, 0, 0;
+	g2_color4	= 139, 0, 0;
+	g2_scale	= 1.000;
+	g2_scale_adj	= 0.500;
+	g2_scale_func	= table6 reverse;
+	g2_alpha_func	= table8 reverse;
+
+}
+
+[particledef]
+{
+id	= blooddrops;
+flags	=  ONMYDEATH COLLIDEKILL EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 10.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 10;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1.000;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 139, 0, 0;
+	color2	= 139, 0, 0;
+	color3	= 139, 0, 0;
+	color4	= 139, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 0.125;
+	scale_adj	= 0.050;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 30.000;
+	speed	= 4.000;
+	speed_adj	= 2.000;
+	elastic	= 0.000;
+	gravity	= 200.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 100.000;
+	spread	= 15.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	blddrop1.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 139, 0, 0;
+	g1_color2	= 139, 0, 0;
+	g1_color3	= 139, 0, 0;
+	g1_color4	= 139, 0, 0;
+	g1_scale	= 0.125;
+	g1_scale_adj	= 0.050;
+	graphic2 =	blddrop1.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 139, 0, 0;
+	g2_color2	= 139, 0, 0;
+	g2_color3	= 139, 0, 0;
+	g2_color4	= 139, 0, 0;
+	g2_scale	= 0.125;
+	g2_scale_adj	= 0.050;
+	graphic3 =	blddrop1.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 139, 0, 0;
+	g3_color2	= 139, 0, 0;
+	g3_color3	= 139, 0, 0;
+	g3_color4	= 139, 0, 0;
+	g3_scale	= 0.125;
+	g3_scale_adj	= 0.050;
+
+}
+
+[particledef]
+{
+id	= bloodsplat;
+flags	=  YAWANDPITCH CONTROLEDALLIGNMENT ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 10.000;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 1.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 250;
+	emit_dur	= 10.000;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 10.000;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 255, 255, 255;
+	color2	= 255, 255, 255;
+	color3	= 255, 255, 255;
+	color4	= 255, 255, 255;
+	bump_scale	= 0.000;
+	scale	= 0.500;
+	scale_adj	= 0.300;
+	alpha_func	= table4;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 360.000, 360.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 0.000;
+	speed_adj	= 0.000;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 0.000;
+	spread	= 0.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	bldsplt1.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 255, 255, 255;
+	g1_color2	= 255, 255, 255;
+	g1_color3	= 255, 255, 255;
+	g1_color4	= 255, 255, 255;
+	g1_scale	= 0.500;
+	g1_scale_adj	= 0.300;
+	g1_alpha_func	= table4;
+	graphic2 =	bldsplt2.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 255, 255, 255;
+	g2_color2	= 255, 255, 255;
+	g2_color3	= 255, 255, 255;
+	g2_color4	= 255, 255, 255;
+	g2_scale	= 0.500;
+	g2_scale_adj	= 0.300;
+	g2_alpha_func	= table4;
+
+}
+
+[particledef]
+{
+id	= blooddrops2;
+flags	=  COLLIDEKILL EMITVECTOR ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 20.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 15;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1.500;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 206, 0, 0;
+	color2	= 139, 0, 0;
+	color3	= 215, 0, 0;
+	color4	= 138, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 0.050;
+	scale_adj	= 0.050;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 360.000, 360.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 45.000;
+	roll_rot_adj	= 15.000;
+	speed	= 4.000;
+	speed_adj	= 2.000;
+	elastic	= 0.000;
+	gravity	= 200.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 100.000;
+	spread	= 3.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	blddrop1.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 206, 0, 0;
+	g1_color2	= 139, 0, 0;
+	g1_color3	= 215, 0, 0;
+	g1_color4	= 138, 0, 0;
+	g1_scale	= 0.050;
+	g1_scale_adj	= 0.050;
+	graphic2 =	blddrop1.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 206, 0, 0;
+	g2_color2	= 139, 0, 0;
+	g2_color3	= 215, 0, 0;
+	g2_color4	= 138, 0, 0;
+	g2_scale	= 0.050;
+	g2_scale_adj	= 0.050;
+	graphic3 =	blddrop1.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 206, 0, 0;
+	g3_color2	= 139, 0, 0;
+	g3_color3	= 215, 0, 0;
+	g3_color4	= 138, 0, 0;
+	g3_scale	= 0.050;
+	g3_scale_adj	= 0.050;
+	graphic4 =	bldsplt2.tga, blend;
+	g4_flip_frames	= 1;
+	g4_flip_rate	= 8;
+	g4_color1	= 206, 0, 0;
+	g4_color2	= 139, 0, 0;
+	g4_color3	= 215, 0, 0;
+	g4_color4	= 138, 0, 0;
+	g4_scale	= 0.050;
+	g4_scale_adj	= 0.050;
+
+}
+
+[particledef]
+{
+id	= blooddrops180;
+flags	=  ONMYDEATH COLLIDEKILL ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 10.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 10;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1.000;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 139, 0, 0;
+	color2	= 139, 0, 0;
+	color3	= 139, 0, 0;
+	color4	= 139, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 0.075;
+	scale_adj	= 0.050;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 30.000;
+	speed	= 4.000;
+	speed_adj	= 2.000;
+	elastic	= 0.000;
+	gravity	= 200.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 100.000;
+	spread	= 45.000;
+	spread_skip	= 20.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	blddrop1.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 139, 0, 0;
+	g1_color2	= 139, 0, 0;
+	g1_color3	= 139, 0, 0;
+	g1_color4	= 139, 0, 0;
+	g1_scale	= 0.075;
+	g1_scale_adj	= 0.050;
+	graphic2 =	blddrop1.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 139, 0, 0;
+	g2_color2	= 139, 0, 0;
+	g2_color3	= 139, 0, 0;
+	g2_color4	= 139, 0, 0;
+	g2_scale	= 0.075;
+	g2_scale_adj	= 0.050;
+	graphic3 =	blddrop1.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 139, 0, 0;
+	g3_color2	= 139, 0, 0;
+	g3_color3	= 139, 0, 0;
+	g3_color4	= 139, 0, 0;
+	g3_scale	= 0.075;
+	g3_scale_adj	= 0.050;
+
+}
+
+[particledef]
+{
+id	= blooddrops1802;
+flags	=  COLLIDEKILL ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 20.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 15;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 1.500;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 206, 0, 0;
+	color2	= 139, 0, 0;
+	color3	= 215, 0, 0;
+	color4	= 138, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 0.050;
+	scale_adj	= 0.050;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 360.000, 360.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 45.000;
+	roll_rot_adj	= 15.000;
+	speed	= 4.000;
+	speed_adj	= 2.000;
+	elastic	= 0.000;
+	gravity	= 200.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 100.000;
+	spread	= 45.000;
+	spread_skip	= 20.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	blddrop1.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 206, 0, 0;
+	g1_color2	= 139, 0, 0;
+	g1_color3	= 215, 0, 0;
+	g1_color4	= 138, 0, 0;
+	g1_scale	= 0.050;
+	g1_scale_adj	= 0.050;
+	graphic2 =	blddrop1.tga, blend;
+	g2_flip_frames	= 1;
+	g2_flip_rate	= 8;
+	g2_color1	= 206, 0, 0;
+	g2_color2	= 139, 0, 0;
+	g2_color3	= 215, 0, 0;
+	g2_color4	= 138, 0, 0;
+	g2_scale	= 0.050;
+	g2_scale_adj	= 0.050;
+	graphic3 =	blddrop1.tga, blend;
+	g3_flip_frames	= 1;
+	g3_flip_rate	= 8;
+	g3_color1	= 206, 0, 0;
+	g3_color2	= 139, 0, 0;
+	g3_color3	= 215, 0, 0;
+	g3_color4	= 138, 0, 0;
+	g3_scale	= 0.050;
+	g3_scale_adj	= 0.050;
+
+}
+
+[particledef]
+{
+id	= bloodmistDrops;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.100;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 10.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.100;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 0.500;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 139, 0, 0;
+	color2	= 139, 0, 0;
+	color3	= 139, 0, 0;
+	color4	= 139, 0, 0;
+	bump_scale	= 0.000;
+	scale	= 2.000;
+	scale_adj	= 0.500;
+	scale_func	= table6 reverse;
+	alpha_func	= table2;
+
+	orientation	= 0.000, 0.000, 0.000;
+	orientationadj	= 0.000, 0.000, 360.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 0.000;
+	speed_adj	= 0.000;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 0.000;
+	spread	= 0.000;
+	spread_skip	= 0.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	bldmist.tga, additive;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 139, 0, 0;
+	g1_color2	= 139, 0, 0;
+	g1_color3	= 139, 0, 0;
+	g1_color4	= 139, 0, 0;
+	g1_scale	= 2.000;
+	g1_scale_adj	= 0.500;
+	g1_scale_func	= table6 reverse;
+	g1_alpha_func	= table2;
+
+}
+
+[particledef]
+{
+id	= bloodgator;
+flags	=  TOPALIGN YAWANDPITCH ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 0.800;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 50.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 1;
+	emit_maxoverride	= 0;
+	emit_dur	= 0.800;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 4.000;
+	age_adj	= 0.000;
+	alpha	= 1.000;
+	color1	= 139, 0, 0;
+	color2	= 165, 42, 0;
+	color3	= 139, 0, 0;
+	color4	= 165, 42, 0;
+	bump_scale	= 0.000;
+	scale	= 3.500;
+	scale_adj	= 0.500;
+	scale_func	= troytab_splash;
+	alpha_func	= table2;
+
+	orientation	= 0.000, 90.000, 0.000;
+	orientationadj	= 0.000, 0.000, 0.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 3.000;
+	speed_adj	= 1.500;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 175.000;
+	spread	= 90.000;
+	spread_skip	= 90.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	oilslick3.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 139, 0, 0;
+	g1_color2	= 165, 42, 0;
+	g1_color3	= 139, 0, 0;
+	g1_color4	= 165, 42, 0;
+	g1_scale	= 3.500;
+	g1_scale_adj	= 0.500;
+	g1_scale_func	= troytab_splash;
+	g1_alpha_func	= table2;
+
+}
+
+[particledef]
+{
+id	= bloodwaterhold;
+flags	=  TOPALIGN YAWANDPITCH ;
+move	=  NORMAL ;
+lod	= 0.000;
+
+	emit_dur	= 2.000;
+	emit_dur_adj	= 0.000;
+	emit_rate	= 1.000;
+	emit_rate_adj	= 0.000;
+	emit_delay	= 0.000;
+	emit_burst	= 5;
+	emit_maxoverride	= 0;
+	emit_dur	= 2.000;
+	y_offset	= 0.000;
+	z_offset	= 0.000;
+	emit_shape	= 0;
+	emit_shape_size	= 0.000, 0.000, 0.000;
+	emit_shape_size_skip	= 0.000, 0.000, 0.000;
+
+	age	= 16.000;
+	age_adj	= 0.000;
+	alpha	= 0.800;
+	color1	= 139, 0, 0;
+	color2	= 165, 42, 0;
+	color3	= 139, 0, 0;
+	color4	= 165, 42, 0;
+	bump_scale	= 0.000;
+	scale	= 7.000;
+	scale_adj	= 0.500;
+	scale_func	= troytab_splash;
+	alpha_func	= table1;
+
+	orientation	= 0.000, 90.000, 0.000;
+	orientationadj	= 0.000, 0.000, 0.000;
+	yaw_rot	= 0.000;
+	yaw_rot_adj	= 0.000;
+	pitch_rot	= 0.000;
+	pitch_rot_adj	= 0.000;
+	roll_rot	= 0.000;
+	roll_rot_adj	= 0.000;
+	speed	= 4.000;
+	speed_adj	= 1.500;
+	elastic	= 0.000;
+	gravity	= 0.000;
+	gravity_mask	= 1.000, 1.000, 1.000;
+	drag	= 175.000;
+	spread	= 90.000;
+	spread_skip	= 90.000;
+	orbitalspeed	= 0.000;
+	orbitalspeed_adj	= 0.000;
+	orbital_axis	= 0.000, 1.000, 0.000;
+	graphic1 =	oilslick3.tga, blend;
+	g1_flip_frames	= 1;
+	g1_flip_rate	= 8;
+	g1_color1	= 139, 0, 0;
+	g1_color2	= 165, 42, 0;
+	g1_color3	= 139, 0, 0;
+	g1_color4	= 165, 42, 0;
+	g1_scale	= 7.000;
+	g1_scale_adj	= 0.500;
+	g1_scale_func	= troytab_splash;
+	g1_alpha_func	= table1;
+
+}
+
+[tabledef]
+{
+	id = bloodscale;
+	tl1 = 127, 128, 128, 128, 129, 129, 129, 130;
+	tl2 = 130, 130, 131, 131, 131, 132, 132, 132;
+	tl3 = 133, 133, 133, 134, 134, 134, 135, 135;
+	tl4 = 135, 136, 136, 136, 137, 137, 137, 137;
+	tl5 = 138, 138, 138, 139, 139, 139, 140, 140;
+	tl6 = 140, 141, 141, 141, 142, 142, 142, 143;
+	tl7 = 143, 143, 144, 144, 144, 145, 145, 145;
+	tl8 = 146, 146, 146, 146, 147, 147, 147, 148;
+	tl9 = 148, 148, 149, 149, 149, 150, 150, 150;
+	tl10 = 151, 151, 151, 152, 152, 152, 153, 153;
+	tl11 = 153, 154, 154, 154, 155, 155, 155, 155;
+	tl12 = 156, 156, 156, 157, 157, 157, 158, 158;
+	tl13 = 158, 159, 159, 159, 160, 160, 160, 161;
+	tl14 = 161, 161, 162, 162, 162, 163, 163, 163;
+	tl15 = 164, 164, 164, 164, 165, 165, 165, 166;
+	tl16 = 166, 166, 167, 167, 167, 168, 168, 168;
+	tl17 = 169, 169, 169, 170, 170, 170, 171, 171;
+	tl18 = 171, 172, 172, 172, 173, 173, 173, 173;
+	tl19 = 174, 174, 174, 175, 175, 175, 176, 176;
+	tl20 = 176, 177, 177, 177, 178, 178, 178, 179;
+	tl21 = 179, 179, 180, 180, 180, 181, 181, 181;
+	tl22 = 182, 182, 182, 182, 183, 183, 183, 184;
+	tl23 = 184, 184, 185, 185, 185, 186, 186, 186;
+	tl24 = 187, 187, 187, 188, 188, 188, 189, 189;
+	tl25 = 189, 190, 190, 190, 191, 191, 191, 191;
+	tl26 = 192, 192, 192, 193, 193, 193, 194, 194;
+	tl27 = 194, 195, 195, 195, 196, 196, 196, 197;
+	tl28 = 197, 197, 198, 198, 198, 199, 199, 199;
+	tl29 = 200, 200, 200, 200, 201, 201, 201, 202;
+	tl30 = 202, 202, 203, 203, 203, 204, 204, 204;
+	tl31 = 205, 205, 205, 206, 206, 206, 207, 207;
+	tl32 = 207, 208, 208, 208, 209, 209, 209, 209;
+
+}
+
+[tabledef_edithandles]
+{
+	handle0 = 0, 128;
+	handle1 = 255, 46;
+	handlecount = 2;
+	tableid = bloodscale;
+	tightness = 0;
+};
+
+ 
